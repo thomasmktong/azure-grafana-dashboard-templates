@@ -71,7 +71,6 @@
                         "Count"
                     ],
                     "aggregation": "Total",
-                    "alias": "SHKF",
                     "dimension": "None",
                     "dimensionFilter": "*",
                     "dimensions": [{
@@ -225,7 +224,6 @@
                         "Count"
                     ],
                     "aggregation": "Total",
-                    "alias": "SHKF",
                     "dimension": "None",
                     "dimensionFilter": "*",
                     "dimensions": [{
@@ -379,7 +377,6 @@
                         "Count"
                     ],
                     "aggregation": "Total",
-                    "alias": "SHKF",
                     "dimension": "None",
                     "dimensionFilter": "*",
                     "dimensions": [{
@@ -533,7 +530,6 @@
                         "Count"
                     ],
                     "aggregation": "Total",
-                    "alias": "SHKF",
                     "dimension": "None",
                     "dimensionFilter": "*",
                     "dimensions": [{

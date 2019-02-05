@@ -71,7 +71,6 @@
                         "Count"
                     ],
                     "aggregation": "Maximum",
-                    "alias": "First",
                     "dimension": "None",
                     "dimensionFilter": "*",
                     "dimensions": [{
@@ -225,7 +224,6 @@
                         "Count"
                     ],
                     "aggregation": "Total",
-                    "alias": "First",
                     "dimension": "None",
                     "dimensionFilter": "*",
                     "dimensions": [{
