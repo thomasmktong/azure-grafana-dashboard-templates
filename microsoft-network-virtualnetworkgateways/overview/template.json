@@ -15,623 +15,625 @@
     "graphTooltip": 0,
     "id": 21,
     "links": [],
-    "panels": [{
-            "aliasColors": {},
-            "bars": false,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": "{dataSourceName}",
-            "fill": 1,
-            "gridPos": {
-                "h": 7,
-                "w": 12,
-                "x": 0,
-                "y": 0
-            },
-            "id": 19,
-            "legend": {
-                "avg": false,
-                "current": false,
-                "max": false,
-                "min": false,
-                "show": true,
-                "total": false,
-                "values": false
-            },
-            "lines": true,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [{
-                "appInsights": {
-                    "groupBy": "none",
-                    "metricName": "select",
-                    "rawQuery": false,
-                    "rawQueryString": "",
-                    "spliton": "",
-                    "timeGrainType": "auto",
-                    "xaxis": "timestamp",
-                    "yaxis": ""
+    "rows": [{
+        "panels": [{
+                "aliasColors": {},
+                "bars": false,
+                "dashLength": 10,
+                "dashes": false,
+                "datasource": "{dataSourceName}",
+                "fill": 1,
+                "gridPos": {
+                    "h": 7,
+                    "w": 12,
+                    "x": 0,
+                    "y": 0
                 },
-                "azureMonitor": {
-                    "aggOptions": [
-                        "None",
-                        "Average",
-                        "Minimum",
-                        "Maximum",
-                        "Total",
-                        "Count"
-                    ],
-                    "aggregation": "Total",
-                    "alias": "SHKF",
-                    "dimension": "None",
-                    "dimensionFilter": "*",
-                    "dimensions": [{
-                            "text": "None",
-                            "value": "None"
-                        },
-                        {
-                            "text": "Connection Name",
-                            "value": "ConnectionName"
-                        },
-                        {
-                            "text": "Remote IP",
-                            "value": "RemoteIP"
-                        }
-                    ],
-                    "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
-                    "metricName": "TunnelIngressPacketDropTSMismatch",
-                    "resourceGroup": "{resourceGroupName}",
-                    "resourceName": "{resourceName}",
-                    "timeGrain": "auto",
-                    "timeGrains": [{
-                            "text": "auto",
-                            "value": "auto"
-                        },
-                        {
-                            "text": "5 minutes",
-                            "value": "PT5M"
-                        },
-                        {
-                            "text": "15 minutes",
-                            "value": "PT15M"
-                        },
-                        {
-                            "text": "30 minutes",
-                            "value": "PT30M"
-                        },
-                        {
-                            "text": "1 hour",
-                            "value": "PT1H"
-                        },
-                        {
-                            "text": "6 hours",
-                            "value": "PT6H"
-                        },
-                        {
-                            "text": "12 hours",
-                            "value": "PT12H"
-                        },
-                        {
-                            "text": "1 day",
-                            "value": "P1D"
-                        }
-                    ]
+                "id": 19,
+                "legend": {
+                    "avg": false,
+                    "current": false,
+                    "max": false,
+                    "min": false,
+                    "show": true,
+                    "total": false,
+                    "values": false
                 },
-                "queryType": "Azure Monitor",
-                "refId": "A"
-            }],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeRegions": [],
-            "timeShift": null,
-            "title": "VPN Ingress Packet Drop",
-            "tooltip": {
-                "shared": true,
-                "sort": 0,
-                "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-                "buckets": null,
-                "mode": "time",
-                "name": null,
-                "show": true,
-                "values": []
-            },
-            "yaxes": [{
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "lines": true,
+                "linewidth": 1,
+                "links": [],
+                "nullPointMode": "null",
+                "percentage": false,
+                "pointradius": 5,
+                "points": false,
+                "renderer": "flot",
+                "seriesOverrides": [],
+                "spaceLength": 10,
+                "stack": false,
+                "steppedLine": false,
+                "targets": [{
+                    "appInsights": {
+                        "groupBy": "none",
+                        "metricName": "select",
+                        "rawQuery": false,
+                        "rawQueryString": "",
+                        "spliton": "",
+                        "timeGrainType": "auto",
+                        "xaxis": "timestamp",
+                        "yaxis": ""
+                    },
+                    "azureMonitor": {
+                        "aggOptions": [
+                            "None",
+                            "Average",
+                            "Minimum",
+                            "Maximum",
+                            "Total",
+                            "Count"
+                        ],
+                        "aggregation": "Total",
+                        "alias": "SHKF",
+                        "dimension": "None",
+                        "dimensionFilter": "*",
+                        "dimensions": [{
+                                "text": "None",
+                                "value": "None"
+                            },
+                            {
+                                "text": "Connection Name",
+                                "value": "ConnectionName"
+                            },
+                            {
+                                "text": "Remote IP",
+                                "value": "RemoteIP"
+                            }
+                        ],
+                        "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
+                        "metricName": "TunnelIngressPacketDropTSMismatch",
+                        "resourceGroup": "{resourceGroupName}",
+                        "resourceName": "{resourceName}",
+                        "timeGrain": "auto",
+                        "timeGrains": [{
+                                "text": "auto",
+                                "value": "auto"
+                            },
+                            {
+                                "text": "5 minutes",
+                                "value": "PT5M"
+                            },
+                            {
+                                "text": "15 minutes",
+                                "value": "PT15M"
+                            },
+                            {
+                                "text": "30 minutes",
+                                "value": "PT30M"
+                            },
+                            {
+                                "text": "1 hour",
+                                "value": "PT1H"
+                            },
+                            {
+                                "text": "6 hours",
+                                "value": "PT6H"
+                            },
+                            {
+                                "text": "12 hours",
+                                "value": "PT12H"
+                            },
+                            {
+                                "text": "1 day",
+                                "value": "P1D"
+                            }
+                        ]
+                    },
+                    "queryType": "Azure Monitor",
+                    "refId": "A"
+                }],
+                "thresholds": [],
+                "timeFrom": null,
+                "timeRegions": [],
+                "timeShift": null,
+                "title": "VPN Ingress Packet Drop",
+                "tooltip": {
+                    "shared": true,
+                    "sort": 0,
+                    "value_type": "individual"
                 },
-                {
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "type": "graph",
+                "xaxis": {
+                    "buckets": null,
+                    "mode": "time",
+                    "name": null,
+                    "show": true,
+                    "values": []
+                },
+                "yaxes": [{
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    },
+                    {
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    }
+                ],
+                "yaxis": {
+                    "align": false,
+                    "alignLevel": null
                 }
-            ],
-            "yaxis": {
-                "align": false,
-                "alignLevel": null
-            }
-        },
-        {
-            "aliasColors": {},
-            "bars": false,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": "{dataSourceName}",
-            "fill": 1,
-            "gridPos": {
-                "h": 7,
-                "w": 12,
-                "x": 12,
-                "y": 0
             },
-            "id": 20,
-            "legend": {
-                "avg": false,
-                "current": false,
-                "max": false,
-                "min": false,
-                "show": true,
-                "total": false,
-                "values": false
-            },
-            "lines": true,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [{
-                "appInsights": {
-                    "groupBy": "none",
-                    "metricName": "select",
-                    "rawQuery": false,
-                    "rawQueryString": "",
-                    "spliton": "",
-                    "timeGrainType": "auto",
-                    "xaxis": "timestamp",
-                    "yaxis": ""
+            {
+                "aliasColors": {},
+                "bars": false,
+                "dashLength": 10,
+                "dashes": false,
+                "datasource": "{dataSourceName}",
+                "fill": 1,
+                "gridPos": {
+                    "h": 7,
+                    "w": 12,
+                    "x": 12,
+                    "y": 0
                 },
-                "azureMonitor": {
-                    "aggOptions": [
-                        "None",
-                        "Average",
-                        "Minimum",
-                        "Maximum",
-                        "Total",
-                        "Count"
-                    ],
-                    "aggregation": "Total",
-                    "alias": "SHKF",
-                    "dimension": "None",
-                    "dimensionFilter": "*",
-                    "dimensions": [{
-                            "text": "None",
-                            "value": "None"
-                        },
-                        {
-                            "text": "Connection Name",
-                            "value": "ConnectionName"
-                        },
-                        {
-                            "text": "Remote IP",
-                            "value": "RemoteIP"
-                        }
-                    ],
-                    "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
-                    "metricName": "TunnelEgressPacketDropTSMismatch",
-                    "resourceGroup": "{resourceGroupName}",
-                    "resourceName": "{resourceName}",
-                    "timeGrain": "auto",
-                    "timeGrains": [{
-                            "text": "auto",
-                            "value": "auto"
-                        },
-                        {
-                            "text": "5 minutes",
-                            "value": "PT5M"
-                        },
-                        {
-                            "text": "15 minutes",
-                            "value": "PT15M"
-                        },
-                        {
-                            "text": "30 minutes",
-                            "value": "PT30M"
-                        },
-                        {
-                            "text": "1 hour",
-                            "value": "PT1H"
-                        },
-                        {
-                            "text": "6 hours",
-                            "value": "PT6H"
-                        },
-                        {
-                            "text": "12 hours",
-                            "value": "PT12H"
-                        },
-                        {
-                            "text": "1 day",
-                            "value": "P1D"
-                        }
-                    ]
+                "id": 20,
+                "legend": {
+                    "avg": false,
+                    "current": false,
+                    "max": false,
+                    "min": false,
+                    "show": true,
+                    "total": false,
+                    "values": false
                 },
-                "queryType": "Azure Monitor",
-                "refId": "A"
-            }],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeRegions": [],
-            "timeShift": null,
-            "title": "VPN Egress Packet Drop",
-            "tooltip": {
-                "shared": true,
-                "sort": 0,
-                "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-                "buckets": null,
-                "mode": "time",
-                "name": null,
-                "show": true,
-                "values": []
-            },
-            "yaxes": [{
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "lines": true,
+                "linewidth": 1,
+                "links": [],
+                "nullPointMode": "null",
+                "percentage": false,
+                "pointradius": 5,
+                "points": false,
+                "renderer": "flot",
+                "seriesOverrides": [],
+                "spaceLength": 10,
+                "stack": false,
+                "steppedLine": false,
+                "targets": [{
+                    "appInsights": {
+                        "groupBy": "none",
+                        "metricName": "select",
+                        "rawQuery": false,
+                        "rawQueryString": "",
+                        "spliton": "",
+                        "timeGrainType": "auto",
+                        "xaxis": "timestamp",
+                        "yaxis": ""
+                    },
+                    "azureMonitor": {
+                        "aggOptions": [
+                            "None",
+                            "Average",
+                            "Minimum",
+                            "Maximum",
+                            "Total",
+                            "Count"
+                        ],
+                        "aggregation": "Total",
+                        "alias": "SHKF",
+                        "dimension": "None",
+                        "dimensionFilter": "*",
+                        "dimensions": [{
+                                "text": "None",
+                                "value": "None"
+                            },
+                            {
+                                "text": "Connection Name",
+                                "value": "ConnectionName"
+                            },
+                            {
+                                "text": "Remote IP",
+                                "value": "RemoteIP"
+                            }
+                        ],
+                        "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
+                        "metricName": "TunnelEgressPacketDropTSMismatch",
+                        "resourceGroup": "{resourceGroupName}",
+                        "resourceName": "{resourceName}",
+                        "timeGrain": "auto",
+                        "timeGrains": [{
+                                "text": "auto",
+                                "value": "auto"
+                            },
+                            {
+                                "text": "5 minutes",
+                                "value": "PT5M"
+                            },
+                            {
+                                "text": "15 minutes",
+                                "value": "PT15M"
+                            },
+                            {
+                                "text": "30 minutes",
+                                "value": "PT30M"
+                            },
+                            {
+                                "text": "1 hour",
+                                "value": "PT1H"
+                            },
+                            {
+                                "text": "6 hours",
+                                "value": "PT6H"
+                            },
+                            {
+                                "text": "12 hours",
+                                "value": "PT12H"
+                            },
+                            {
+                                "text": "1 day",
+                                "value": "P1D"
+                            }
+                        ]
+                    },
+                    "queryType": "Azure Monitor",
+                    "refId": "A"
+                }],
+                "thresholds": [],
+                "timeFrom": null,
+                "timeRegions": [],
+                "timeShift": null,
+                "title": "VPN Egress Packet Drop",
+                "tooltip": {
+                    "shared": true,
+                    "sort": 0,
+                    "value_type": "individual"
                 },
-                {
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "type": "graph",
+                "xaxis": {
+                    "buckets": null,
+                    "mode": "time",
+                    "name": null,
+                    "show": true,
+                    "values": []
+                },
+                "yaxes": [{
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    },
+                    {
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    }
+                ],
+                "yaxis": {
+                    "align": false,
+                    "alignLevel": null
                 }
-            ],
-            "yaxis": {
-                "align": false,
-                "alignLevel": null
-            }
-        },
-        {
-            "aliasColors": {},
-            "bars": false,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": "{dataSourceName}",
-            "fill": 1,
-            "gridPos": {
-                "h": 14,
-                "w": 12,
-                "x": 0,
-                "y": 7
             },
-            "id": 4,
-            "legend": {
-                "avg": false,
-                "current": false,
-                "max": false,
-                "min": false,
-                "show": true,
-                "total": false,
-                "values": false
-            },
-            "lines": true,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [{
-                "appInsights": {
-                    "groupBy": "none",
-                    "metricName": "select",
-                    "rawQuery": false,
-                    "rawQueryString": "",
-                    "spliton": "",
-                    "timeGrainType": "auto",
-                    "xaxis": "timestamp",
-                    "yaxis": ""
+            {
+                "aliasColors": {},
+                "bars": false,
+                "dashLength": 10,
+                "dashes": false,
+                "datasource": "{dataSourceName}",
+                "fill": 1,
+                "gridPos": {
+                    "h": 14,
+                    "w": 12,
+                    "x": 0,
+                    "y": 7
                 },
-                "azureMonitor": {
-                    "aggOptions": [
-                        "None",
-                        "Average",
-                        "Minimum",
-                        "Maximum",
-                        "Total",
-                        "Count"
-                    ],
-                    "aggregation": "Total",
-                    "alias": "SHKF",
-                    "dimension": "None",
-                    "dimensionFilter": "*",
-                    "dimensions": [{
-                            "text": "None",
-                            "value": "None"
-                        },
-                        {
-                            "text": "Connection Name",
-                            "value": "ConnectionName"
-                        },
-                        {
-                            "text": "Remote IP",
-                            "value": "RemoteIP"
-                        }
-                    ],
-                    "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
-                    "metricName": "TunnelIngressBytes",
-                    "resourceGroup": "{resourceGroupName}",
-                    "resourceName": "{resourceName}",
-                    "timeGrain": "auto",
-                    "timeGrains": [{
-                            "text": "auto",
-                            "value": "auto"
-                        },
-                        {
-                            "text": "5 minutes",
-                            "value": "PT5M"
-                        },
-                        {
-                            "text": "15 minutes",
-                            "value": "PT15M"
-                        },
-                        {
-                            "text": "30 minutes",
-                            "value": "PT30M"
-                        },
-                        {
-                            "text": "1 hour",
-                            "value": "PT1H"
-                        },
-                        {
-                            "text": "6 hours",
-                            "value": "PT6H"
-                        },
-                        {
-                            "text": "12 hours",
-                            "value": "PT12H"
-                        },
-                        {
-                            "text": "1 day",
-                            "value": "P1D"
-                        }
-                    ]
+                "id": 4,
+                "legend": {
+                    "avg": false,
+                    "current": false,
+                    "max": false,
+                    "min": false,
+                    "show": true,
+                    "total": false,
+                    "values": false
                 },
-                "queryType": "Azure Monitor",
-                "refId": "A"
-            }],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeRegions": [],
-            "timeShift": null,
-            "title": "VPN Total Ingress Bytes",
-            "tooltip": {
-                "shared": true,
-                "sort": 0,
-                "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-                "buckets": null,
-                "mode": "time",
-                "name": null,
-                "show": true,
-                "values": []
-            },
-            "yaxes": [{
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "lines": true,
+                "linewidth": 1,
+                "links": [],
+                "nullPointMode": "null",
+                "percentage": false,
+                "pointradius": 5,
+                "points": false,
+                "renderer": "flot",
+                "seriesOverrides": [],
+                "spaceLength": 10,
+                "stack": false,
+                "steppedLine": false,
+                "targets": [{
+                    "appInsights": {
+                        "groupBy": "none",
+                        "metricName": "select",
+                        "rawQuery": false,
+                        "rawQueryString": "",
+                        "spliton": "",
+                        "timeGrainType": "auto",
+                        "xaxis": "timestamp",
+                        "yaxis": ""
+                    },
+                    "azureMonitor": {
+                        "aggOptions": [
+                            "None",
+                            "Average",
+                            "Minimum",
+                            "Maximum",
+                            "Total",
+                            "Count"
+                        ],
+                        "aggregation": "Total",
+                        "alias": "SHKF",
+                        "dimension": "None",
+                        "dimensionFilter": "*",
+                        "dimensions": [{
+                                "text": "None",
+                                "value": "None"
+                            },
+                            {
+                                "text": "Connection Name",
+                                "value": "ConnectionName"
+                            },
+                            {
+                                "text": "Remote IP",
+                                "value": "RemoteIP"
+                            }
+                        ],
+                        "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
+                        "metricName": "TunnelIngressBytes",
+                        "resourceGroup": "{resourceGroupName}",
+                        "resourceName": "{resourceName}",
+                        "timeGrain": "auto",
+                        "timeGrains": [{
+                                "text": "auto",
+                                "value": "auto"
+                            },
+                            {
+                                "text": "5 minutes",
+                                "value": "PT5M"
+                            },
+                            {
+                                "text": "15 minutes",
+                                "value": "PT15M"
+                            },
+                            {
+                                "text": "30 minutes",
+                                "value": "PT30M"
+                            },
+                            {
+                                "text": "1 hour",
+                                "value": "PT1H"
+                            },
+                            {
+                                "text": "6 hours",
+                                "value": "PT6H"
+                            },
+                            {
+                                "text": "12 hours",
+                                "value": "PT12H"
+                            },
+                            {
+                                "text": "1 day",
+                                "value": "P1D"
+                            }
+                        ]
+                    },
+                    "queryType": "Azure Monitor",
+                    "refId": "A"
+                }],
+                "thresholds": [],
+                "timeFrom": null,
+                "timeRegions": [],
+                "timeShift": null,
+                "title": "VPN Total Ingress Bytes",
+                "tooltip": {
+                    "shared": true,
+                    "sort": 0,
+                    "value_type": "individual"
                 },
-                {
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "type": "graph",
+                "xaxis": {
+                    "buckets": null,
+                    "mode": "time",
+                    "name": null,
+                    "show": true,
+                    "values": []
+                },
+                "yaxes": [{
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    },
+                    {
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    }
+                ],
+                "yaxis": {
+                    "align": false,
+                    "alignLevel": null
                 }
-            ],
-            "yaxis": {
-                "align": false,
-                "alignLevel": null
-            }
-        },
-        {
-            "aliasColors": {},
-            "bars": false,
-            "dashLength": 10,
-            "dashes": false,
-            "datasource": "{dataSourceName}",
-            "fill": 1,
-            "gridPos": {
-                "h": 14,
-                "w": 12,
-                "x": 12,
-                "y": 7
             },
-            "id": 18,
-            "legend": {
-                "avg": false,
-                "current": false,
-                "max": false,
-                "min": false,
-                "show": true,
-                "total": false,
-                "values": false
-            },
-            "lines": true,
-            "linewidth": 1,
-            "links": [],
-            "nullPointMode": "null",
-            "percentage": false,
-            "pointradius": 5,
-            "points": false,
-            "renderer": "flot",
-            "seriesOverrides": [],
-            "spaceLength": 10,
-            "stack": false,
-            "steppedLine": false,
-            "targets": [{
-                "appInsights": {
-                    "groupBy": "none",
-                    "metricName": "select",
-                    "rawQuery": false,
-                    "rawQueryString": "",
-                    "spliton": "",
-                    "timeGrainType": "auto",
-                    "xaxis": "timestamp",
-                    "yaxis": ""
+            {
+                "aliasColors": {},
+                "bars": false,
+                "dashLength": 10,
+                "dashes": false,
+                "datasource": "{dataSourceName}",
+                "fill": 1,
+                "gridPos": {
+                    "h": 14,
+                    "w": 12,
+                    "x": 12,
+                    "y": 7
                 },
-                "azureMonitor": {
-                    "aggOptions": [
-                        "None",
-                        "Average",
-                        "Minimum",
-                        "Maximum",
-                        "Total",
-                        "Count"
-                    ],
-                    "aggregation": "Total",
-                    "alias": "SHKF",
-                    "dimension": "None",
-                    "dimensionFilter": "*",
-                    "dimensions": [{
-                            "text": "None",
-                            "value": "None"
-                        },
-                        {
-                            "text": "Connection Name",
-                            "value": "ConnectionName"
-                        },
-                        {
-                            "text": "Remote IP",
-                            "value": "RemoteIP"
-                        }
-                    ],
-                    "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
-                    "metricName": "TunnelEgressBytes",
-                    "resourceGroup": "{resourceGroupName}",
-                    "resourceName": "{resourceName}",
-                    "timeGrain": "auto",
-                    "timeGrains": [{
-                            "text": "auto",
-                            "value": "auto"
-                        },
-                        {
-                            "text": "5 minutes",
-                            "value": "PT5M"
-                        },
-                        {
-                            "text": "15 minutes",
-                            "value": "PT15M"
-                        },
-                        {
-                            "text": "30 minutes",
-                            "value": "PT30M"
-                        },
-                        {
-                            "text": "1 hour",
-                            "value": "PT1H"
-                        },
-                        {
-                            "text": "6 hours",
-                            "value": "PT6H"
-                        },
-                        {
-                            "text": "12 hours",
-                            "value": "PT12H"
-                        },
-                        {
-                            "text": "1 day",
-                            "value": "P1D"
-                        }
-                    ]
+                "id": 18,
+                "legend": {
+                    "avg": false,
+                    "current": false,
+                    "max": false,
+                    "min": false,
+                    "show": true,
+                    "total": false,
+                    "values": false
                 },
-                "queryType": "Azure Monitor",
-                "refId": "A"
-            }],
-            "thresholds": [],
-            "timeFrom": null,
-            "timeRegions": [],
-            "timeShift": null,
-            "title": "VPN Total Egress Bytes",
-            "tooltip": {
-                "shared": true,
-                "sort": 0,
-                "value_type": "individual"
-            },
-            "type": "graph",
-            "xaxis": {
-                "buckets": null,
-                "mode": "time",
-                "name": null,
-                "show": true,
-                "values": []
-            },
-            "yaxes": [{
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "lines": true,
+                "linewidth": 1,
+                "links": [],
+                "nullPointMode": "null",
+                "percentage": false,
+                "pointradius": 5,
+                "points": false,
+                "renderer": "flot",
+                "seriesOverrides": [],
+                "spaceLength": 10,
+                "stack": false,
+                "steppedLine": false,
+                "targets": [{
+                    "appInsights": {
+                        "groupBy": "none",
+                        "metricName": "select",
+                        "rawQuery": false,
+                        "rawQueryString": "",
+                        "spliton": "",
+                        "timeGrainType": "auto",
+                        "xaxis": "timestamp",
+                        "yaxis": ""
+                    },
+                    "azureMonitor": {
+                        "aggOptions": [
+                            "None",
+                            "Average",
+                            "Minimum",
+                            "Maximum",
+                            "Total",
+                            "Count"
+                        ],
+                        "aggregation": "Total",
+                        "alias": "SHKF",
+                        "dimension": "None",
+                        "dimensionFilter": "*",
+                        "dimensions": [{
+                                "text": "None",
+                                "value": "None"
+                            },
+                            {
+                                "text": "Connection Name",
+                                "value": "ConnectionName"
+                            },
+                            {
+                                "text": "Remote IP",
+                                "value": "RemoteIP"
+                            }
+                        ],
+                        "metricDefinition": "Microsoft.Network/virtualNetworkGateways",
+                        "metricName": "TunnelEgressBytes",
+                        "resourceGroup": "{resourceGroupName}",
+                        "resourceName": "{resourceName}",
+                        "timeGrain": "auto",
+                        "timeGrains": [{
+                                "text": "auto",
+                                "value": "auto"
+                            },
+                            {
+                                "text": "5 minutes",
+                                "value": "PT5M"
+                            },
+                            {
+                                "text": "15 minutes",
+                                "value": "PT15M"
+                            },
+                            {
+                                "text": "30 minutes",
+                                "value": "PT30M"
+                            },
+                            {
+                                "text": "1 hour",
+                                "value": "PT1H"
+                            },
+                            {
+                                "text": "6 hours",
+                                "value": "PT6H"
+                            },
+                            {
+                                "text": "12 hours",
+                                "value": "PT12H"
+                            },
+                            {
+                                "text": "1 day",
+                                "value": "P1D"
+                            }
+                        ]
+                    },
+                    "queryType": "Azure Monitor",
+                    "refId": "A"
+                }],
+                "thresholds": [],
+                "timeFrom": null,
+                "timeRegions": [],
+                "timeShift": null,
+                "title": "VPN Total Egress Bytes",
+                "tooltip": {
+                    "shared": true,
+                    "sort": 0,
+                    "value_type": "individual"
                 },
-                {
-                    "format": "short",
-                    "label": null,
-                    "logBase": 1,
-                    "max": null,
-                    "min": null,
-                    "show": true
+                "type": "graph",
+                "xaxis": {
+                    "buckets": null,
+                    "mode": "time",
+                    "name": null,
+                    "show": true,
+                    "values": []
+                },
+                "yaxes": [{
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    },
+                    {
+                        "format": "short",
+                        "label": null,
+                        "logBase": 1,
+                        "max": null,
+                        "min": null,
+                        "show": true
+                    }
+                ],
+                "yaxis": {
+                    "align": false,
+                    "alignLevel": null
                 }
-            ],
-            "yaxis": {
-                "align": false,
-                "alignLevel": null
             }
-        }
-    ],
+        ]
+    }],
     "refresh": false,
     "schemaVersion": 16,
     "style": "dark",
